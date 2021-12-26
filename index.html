@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+	<meta name="google" content="notranslate" />
+	<title>ActiveBox</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+
+	<!-- SPRITE -->
+	<svg style="display: none;">
+
+	    <symbol id="facebook" viewBox="0 0 8 18">
+	    	<path d="M389,2800.83h-2.724v-1.87a0.75,0.75,0,0,1,.757-0.87h1.923v-3.08l-2.648-.01c-2.939,0-3.608,2.3-3.608,3.77v2.06H381v3.18h1.7V2813h3.576v-8.99h2.412Z" transform="translate(-381 -2795)"/>
+	    </symbol>
+
+	    <symbol id="twitter" viewBox="0 0 20 13.81">
+	    	<path d="M435,2799.28a0.1,0.1,0,0,1-.038-0.03,3.636,3.636,0,0,0-2.637-.94l-0.031-.07h0.019a3.2,3.2,0,0,0,1.62-.63,0.2,0.2,0,0,0-.211-0.3,5.85,5.85,0,0,0-1.266.29q0.72-.435.561-0.6a2.523,2.523,0,0,0-1.521.69,0.753,0.753,0,0,0,.224-0.52,3.959,3.959,0,0,0-.673.53,10.371,10.371,0,0,0-.979,1.19l-0.012.03a10.225,10.225,0,0,0-1.36,2.98l-0.1.07-0.019.02a4.966,4.966,0,0,0-1.4-1.15,17.009,17.009,0,0,0-2.308-1.16,19.843,19.843,0,0,0-2.936-1.16,2.763,2.763,0,0,0,1.615,2.49v0.02a3.411,3.411,0,0,0-1.1.15q0.1,1.455,2.182,2.01l-0.006.02a1.638,1.638,0,0,0-1.34.52,2.431,2.431,0,0,0,2.425,1.21,1.575,1.575,0,0,0-.53.37,0.737,0.737,0,0,0-.212.74,1.354,1.354,0,0,0,1.359.6h0l0.038,0.04c-0.007.01-.013,0.01-0.019,0.02a5.213,5.213,0,0,1-4.134,1.51l-0.025.01a5.372,5.372,0,0,1-3.179-1.34,9.782,9.782,0,0,0,4.551,3.39,11.389,11.389,0,0,0,6.465.14h0.038a10.2,10.2,0,0,0,5.317-3.5,6.889,6.889,0,0,0,1.266-2.66,2.665,2.665,0,0,0,2.363-.89l-0.012-.02a4.945,4.945,0,0,1-2.127-.12v-0.11h0.007c1.154-.12,1.833-0.47,2.051-1.06a3.371,3.371,0,0,1-2.382.03A4.77,4.77,0,0,0,435,2799.28Z" transform="translate(-419 -2797)"/>
+	    </symbol>
+
+	    <symbol id="in" viewBox="0 0 16 16">
+	    	<path d="M473.6,2803.22v-0.03l-0.016.03H473.6Zm6.213-7.22H466.182a1.163,1.163,0,0,0-1.182,1.15v13.7a1.163,1.163,0,0,0,1.182,1.15h13.635a1.163,1.163,0,0,0,1.183-1.15v-13.7A1.163,1.163,0,0,0,479.817,2796Zm-9.967,13.39h-2.417v-7.22h2.417v7.22Zm-1.208-8.21h-0.016A1.381,1.381,0,1,1,468.642,2801.18Zm9.922,8.21h-2.417v-3.86c0-.97-0.349-1.64-1.224-1.64a1.326,1.326,0,0,0-1.24.88,1.661,1.661,0,0,0-.079.59v4.03h-2.417s0.032-6.54,0-7.22H473.6v1.02a2.4,2.4,0,0,1,2.178-1.19c1.59,0,2.782,1.03,2.782,3.25v4.14Z" transform="translate(-465 -2796)"/>
+	    </symbol>
+
+	</svg>
+
+
+<!-- HEADER -->
+    <header class="header" id="header">
+    	<div class="container">
+    		<div class="header-inner">
+    			<div class="header-logo">
+    				<img src="assets/images/header/activebox-logo.png" alt="/" data-scroll="#intro">
+    			</div>
+
+    			<nav class="nav" id="nav">
+    				<a class="nav-link" href="/" data-scroll="#fiatures">features</a>
+    				<a class="nav-link" href="/" data-scroll="#works">works</a>
+    				<a class="nav-link" href="/" data-scroll="#team">our team</a>
+    				<a class="nav-link" href="/" data-scroll="#reviews">testimonials</a>
+    				<a class="nav-link" href="/" data-scroll="#donwload">donwload</a>
+    			</nav>
+
+    			<button class="burger" type="button" id="navToggle">
+    				<span class="burger-item">Menu</span>
+    			</button>
+    		</div>
+    	</div>
+    </header>
+
+
+<!-- INTRO -->
+    <div class="intro" id="intro">
+    	<div class="container">
+    		<div class="intro-inner">
+    			<h1 class="intro-title">Your Favorite One Page Multi Purpose Template</h1>
+    			<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna vel scelerisque nisl consectetur et.</p>
+    			<a class="btn btn--red" href="/">Find out more</a>
+            </div>
+    	</div>
+    </div>
+
+
+<!-- FIATURES -->
+    <div class="container" id="fiatures">
+    	<div class="fiatures">
+    		<div class="fiatures-item">
+    			<img class="fiatures-icon" src="assets/images/features/easily-customised.png" alt="/">
+    			<h4 class="fiatures-title">easily customised</h4>
+    			<div class="fiatures-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper metus auctor fringilla.</div>
+    		</div>
+
+    		<div class="fiatures-item">
+    			<img class="fiatures-icon" src="assets/images/features/responsive-ready.png" alt="/">
+    			<h4 class="fiatures-title">responsive ready</h4>
+    			<div class="fiatures-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</div>
+    		</div>
+
+    		<div class="fiatures-item">
+    			<img class="fiatures-icon" src="assets/images/features/modern-design.png" alt="/">
+    			<h4 class="fiatures-title">modern design</h4>
+    			<div class="fiatures-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</div>
+    		</div>
+
+    		<div class="fiatures-item">
+    			<img class="fiatures-icon" src="assets/images/features/clean-code.png" alt="/">
+    			<h4 class="fiatures-title">clean code</h4>
+    			<div class="fiatures-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper metus auctor fringilla.</div>
+    		</div>
+
+    		<div class="fiatures-item">
+    			<img class="fiatures-icon" src="assets/images/features/ready-to-ship.png" alt="/">
+    			<h4 class="fiatures-title">ready to ship</h4>
+    			<div class="fiatures-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</div>
+    		</div>
+
+    		<div class="fiatures-item">
+    			<img class="fiatures-icon" src="assets/images/features/donwload-for-free.png" alt="/">
+    			<h4 class="fiatures-title">donwload for free</h4>
+    			<div class="fiatures-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</div>
+    		</div>
+    	</div>       
+    	<!--  -->
+    </div>
+
+
+<!-- WORKS -->
+    <div class="works" id="works">
+    	<div class="works-item">
+    		<img class="works-image" src="assets/images/works/1.jpg" alt="/">
+    		<div class="works-content">
+    			<div class="works-title">Project name</div>
+    			<div class="works-text">User Interface Design</div>
+    		</div>
+    	</div>
+
+    	<div class="works-item">
+    		<img class="works-image" src="assets/images/works/2.jpg" alt="/">
+    		<div class="works-content">
+    			<div class="works-title">Project name</div>
+    			<div class="works-text">User Interface Design</div>
+    		</div>
+    	</div>
+
+    	<div class="works-item">
+    		<img class="works-image" src="assets/images/works/3.jpg" alt="/">
+    		<div class="works-content">
+    			<div class="works-title">Project name</div>
+    			<div class="works-text">User Interface Design</div>
+    		</div>
+    	</div>
+
+    	<div class="works-item">
+    		<img class="works-image" src="assets/images/works/4.jpg" alt="/">
+    		<div class="works-content">
+    			<div class="works-title">Project name</div>
+    			<div class="works-text">User Interface Design</div>
+    		</div>
+    	</div>
+
+    	<div class="works-item">
+    		<img class="works-image" src="assets/images/works/5.jpg" alt="/">
+    		<div class="works-content">
+    			<div class="works-title">Project name</div>
+    			<div class="works-text">User Interface Design</div>
+    		</div>
+    	</div>
+
+    	<div class="works-item">
+    		<img class="works-image" src="assets/images/works/6.jpg" alt="/">
+    		<div class="works-content">
+    			<div class="works-title">Project name</div>
+    			<div class="works-text">User Interface Design</div>
+    		</div>
+    	</div>
+
+    	<div class="works-item">
+    		<img class="works-image" src="assets/images/works/7.jpg" alt="/">
+    		<div class="works-content">
+    			<div class="works-title">Project name</div>
+    			<div class="works-text">User Interface Design</div>
+    		</div>
+    	</div>
+
+    	<div class="works-item">
+    		<img class="works-image" src="assets/images/works/8.jpg" alt="/">
+    		<div class="works-content">
+    			<div class="works-title">Project name</div>
+    			<div class="works-text">User Interface Design</div>
+    		</div>
+    	</div>
+    </div>
+
+
+<!-- TEAM -->
+    <div class="team" id="team">
+    	<div class="container">
+    		<div class="team-inner">
+    			<div class="team-item">
+    				<img class="team-photo" src="assets/images/team/ruth-woods.jpg" alt="/">
+    				<div class="team-name">Ruth Woods</div>
+    				<div class="team-prof">Founder, CEO</div>
+    				<div class="team-text"> 
+    					<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+    				</div>
+    				<div class="social">
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"  
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#facebook"></use>
+    						</svg>
+    					</a>
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#twitter"></use>
+    						</svg>
+    					</a>
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#in"></use>
+    						</svg>
+    					</a>
+    				</div>
+    			</div>
+
+    			<div class="team-item">
+    				<img class="team-photo" src="assets/images/team/timothy-reed.jpg" alt="/">
+    				<div class="team-name">Timothy Reed</div>
+    				<div class="team-prof">Co founder, developer</div>
+    				<div class="team-text"> 
+    					<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+    				</div>
+    				<div class="social">
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"  
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#facebook"></use>
+    						</svg>
+    					</a>
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#twitter"></use>
+    						</svg>
+    					</a>
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#in"></use>
+    						</svg>
+    					</a>
+    				</div>
+    			</div>
+
+    			<div class="team-item">
+    				<img class="team-photo" src="assets/images/team/victoria-valdez.jpg" alt="/">
+    				<div class="team-name">Victoria Valdez</div>
+    				<div class="team-prof">Ui designer</div>
+    				<div class="team-text"> 
+    					<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+    				</div>
+    				<div class="social">
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"  
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#facebook"></use>
+    						</svg>
+    					</a>
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#twitter"></use>
+    						</svg>
+    					</a>
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#in"></use>
+    						</svg>
+    					</a>
+    				</div>
+    			</div>
+
+    			<div class="team-item">
+    				<img class="team-photo" src="assets/images/team/beverly-little.jpg" alt="/">
+    				<div class="team-name">Beverly Little</div>
+    				<div class="team-prof">Data Scientist</div>
+    				<div class="team-text"> 
+    					<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+    				</div>
+    				<div class="social">
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"  
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#facebook"></use>
+    						</svg>
+    					</a>
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#twitter"></use>
+    						</svg>
+    					</a>
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#in"></use>
+    						</svg>
+    					</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+    <!-- Testimonials -->
+    <div class="reviews" id="reviews">
+    	<div class="container">
+
+            <div class="reviews-slider" id="reviewsSlider">
+            	<div class="slick-item">
+		    		<div class="reviews-item">
+		    			<div class="reviews-photo">
+		    				<img class="reviews-img" src="assets/images/reviews/review-1.jpg" alt="/">
+		    			</div>
+		    			<div class="reviews-content">
+		    				<div class="reviews-text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+		    				<div class="reviews-author">Susan Sims, Interaction Designer at XYZ</div>
+		    			</div>
+		    		</div>
+		    	</div>
+	    	
+
+	    		<div class="slick-item">
+		    		<div class="reviews-item">
+		    			<div class="reviews-photo">
+		    				<img class="reviews-img" src="assets/images/reviews/review-2.jpg" alt="/">
+		    			</div>
+		    			<div class="reviews-content">
+		    				<div class="reviews-text">“The Royal Swedish Army Staff College was the name which that the former Higher Artillery School (Högre artilleriläroverket) in Marieberg adopted in November 1866. The Swedish Army then received for the first time a training course for staff officers...”</div>
+		    				<div class="reviews-author">Susan Sims, Interaction Designer at XYZ</div>
+		    			</div>
+		    		</div>
+		    	</div>
+	    	</div>
+
+    	</div>
+    </div>
+
+
+    <!-- Donwload -->
+    <div class="donwload" id="donwload">
+    	<div class="container">
+    		<h3 class="donwload-title">Are You Ready to Start? Download Now For Free!</h3>
+    		<div class="donwload-text">
+    			<p>Fusce dapibus, tellus ac cursus commodo</p>
+    		</div>
+    		<a class="btn btn--red btn--long" href="">Donwload here</a>
+    	</div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+    	<div class="container">
+
+    		<div class="footer-inner">
+    			<div class="footer-block">
+    				<h4 class="footer-title">Location</h4>
+    				<address class="footer-address">
+    					<div>3481 Melrose Place</div> 
+    					<div>Beverly Hills, CA 90210</div>
+    			    </address>
+    			</div>
+
+    			<div class="footer-block">
+    				<h4 class="footer-title">Share with love</h4>
+    				<div class="social social--footer">
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"  
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#facebook"></use>
+    						</svg>
+    					</a>
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#twitter"></use>
+    						</svg>
+    					</a>
+    					<a class="social-item" href="https://www.instagram.com/fonet_/"
+    					target="_blank">
+    						<svg class="social-icon">
+    							<use xlink:href="#in"></use>
+    						</svg>
+    					</a>
+    				</div>
+    			</div>
+
+    			<div class="footer-block">
+    				<h4 class="footer-title">About ActiveBox</h4>
+    				<div class="footer-text">
+    					<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    				</div>
+    			</div>
+    		</div>
+
+    	</div>
+
+    	<div class="copyright">
+    		<div class="container">
+	    		<div class="copyright-text">
+	    			<div>Copyright © 2015 ActiveBox. All Rights Reserved</div>
+	    			<div>Made <span>by Kamal Chaneman</span></div>
+	    		</div>
+	    	</div>
+    	</div>
+    </footer>
+
+
+<!-- JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
